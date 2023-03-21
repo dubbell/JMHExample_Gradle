@@ -43,6 +43,9 @@ dependencies {
     jmhImplementation group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.36'
 
     implementation 'com.google.guava:guava:31.1-jre'
+
+    implementation 'org.openjdk.jmh:jmh-generator-annprocess:1.36'
+    implementation 'org.openjdk.jmh:jmh-core:1.36'
 }
 
 application {
