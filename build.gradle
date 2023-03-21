@@ -23,7 +23,11 @@ group = 'gradleexample'
 version = '1.0.0'
 
 sourceSets {
-    jmh
+    jmh {
+        java.srcDirs = ['src/test/java']
+        resources.srcDirs = ['src/test/resources']
+        compileClasspath += sourceSets.main.runtimeClasspath
+    }
 }
 configurations.jmhImplementation.extendsFrom(configurations.implementation)
 
