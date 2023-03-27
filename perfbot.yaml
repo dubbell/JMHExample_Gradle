@@ -1,5 +1,2 @@
 language: java
 buildTool: gradle
-include:
-  - JMHExample
-forks: 2
